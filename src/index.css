@@ -28,9 +28,9 @@ code {
 
 .nav-button
 {
-  display: inline;
   text-align: center;
   width: 25%;
+  list-style: none ;
 }
 .title
 {
@@ -49,4 +49,15 @@ code {
   width: 100%;
   height: 100vh;
   background: blue;
+}
+@media (max-width: 600px)
+{
+  .title
+  {
+    display: none;
+  }
+  .nav-options
+  {
+    width: 100%;
+  }
 }

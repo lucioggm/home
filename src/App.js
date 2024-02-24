@@ -27,7 +27,7 @@ function Presentation(props)
         <p className={"presentation-text"}>{text["university"]}</p>
         <p className={"presentation-text"}>{text["campus"]}</p>
 
-        <p className={"presentation-title"}>{text["certifications"]}</p>
+        <p className={"presentation-text"}>{text["certifications"]}</p>
 
     </section>
 
@@ -163,6 +163,8 @@ function App() {
             setLanguage(en)
         else
             setLanguage(es)
+        document.getElementById("language-button").removeEventListener("click",changeLanguage)
+
     }
     document.getElementById("language-button").addEventListener("click",changeLanguage)
 
