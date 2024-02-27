@@ -54,7 +54,7 @@ function Presentation(props)
 function MenuRadial(props) {
     const {textMenu} = props
     const [circleSize, setCircleSize] = useState(0);
-    const [currentOption, setCurrentOption] = useState("default")
+    const [currentOption, setCurrentOption] = useState("selecciona")
 
     useEffect(() => {
         const updateCircleSize = () => {
@@ -77,9 +77,11 @@ function MenuRadial(props) {
             style={{
                 width: "45%",
                 height: "45%",
-                background: "red",
-                borderRadius: "50%",
-                position: "relative",
+                background: "url('neptuno.png') no-repeat center center ",
+                backgroundSize: "100% 100%",
+                borderRadius:  "50%",
+
+                position: "absolute",
                 top: "35%",
                 left: "10%",
                 display: "flex",
@@ -93,7 +95,9 @@ function MenuRadial(props) {
         </div>
     );
     const circleOptionClass = {
-        backgroundColor: "gray",
+        background: "url('triton.png') no-repeat center center ",
+        backgroundSize: "100% 100%",
+
         position: "absolute",
         width: "25%",
         height: "25%",
@@ -101,7 +105,8 @@ function MenuRadial(props) {
         alignItems: "center",
         justifyContent:"center",
 
-        borderRadius:"50%"
+        borderRadius:"50%",
+
 
     };
 
@@ -114,7 +119,7 @@ function MenuRadial(props) {
 
         const {appIndex,position,url,srcImage} = props
         const appInfo = textMenu["app"+appIndex]
-        return <div  style={{...circleOptionClass, ...position}}>  <a style={{width: "100%",height: "100%",display:"flex",alignItems:"center",justifyContent:"center"}} href={url} target="_blank" rel="noopener noreferrer">
+        return <div className={"circle-option"} style={{...circleOptionClass, ...position}}>  <a style={{width: "100%",height: "100%",display:"flex",alignItems:"center",justifyContent:"center"}} href={url} target="_blank" rel="noopener noreferrer">
             <img id={"app"+appIndex}  onMouseOver={handleOptionCircle} style={{width: "80%",height: "80%"}} src={srcImage} /></a></div> }
     const ExternalCircle = (
         <div
@@ -122,7 +127,7 @@ function MenuRadial(props) {
             style={{
                 width: circleSize,
                 height: circleSize,
-                background: "blue",
+                background: "none",
                 borderRadius: "50%",
                 position: "relative"
             }}

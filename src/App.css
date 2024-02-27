@@ -1,15 +1,15 @@
 #app {
-  background: #282c34;
+  background: none;
 
   margin-right: 5%;
-  margin-left:5% ;
+  margin-left: 5%;
   width: 90%;
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
 
+}
 
 
 #title
@@ -23,11 +23,14 @@
   display: flex;
   flex-wrap: wrap;
   min-width: 400px;
+  font-size: 30px;
+  text-align: center;
 }
 #presentation-wrapper
 {
   min-width: 400px;
-  background: green;
+  color: white;
+  background: none;
   width: 50%;
   display: flex;
   flex-wrap: wrap;
@@ -36,8 +39,14 @@
 .presentation-section
 {
   width: 50%;
-  padding: 10px;
+  padding: 5px;
   min-width: 200px;
+  border-bottom:1px solid white;
+  border-top:1px solid white;
+
+
+  font-size: 30px;
+
 }
 #img
 {
@@ -50,14 +59,18 @@
   padding: 10px;
   width: 50%;
   min-width: 300px;
+  border-top:1px solid white;
+
 }
 #menu-radial-wrapper
 {
-  background: whitesmoke;
+ //border: 1px solid white;
+
   display: flex;
   padding: 10px;
   min-height: 600px;
   justify-content: center;
+  color: whitesmoke;
 }
 #circle-wrapper
 {
@@ -67,25 +80,55 @@
   align-items: center;
   justify-content: center;
 }
-.presentation-section
-{
-  font-size: 30px;
-}
+
 .presentation-title
 {
-  font-size: 1em
+  font-size: 1em;
+  padding: 10px;
+  margin: 10px;
 }
 .presentation-text
 {
   font-size: .8em;
- text-align: justify;
 
+}
+.presentation-text,.presentation-title
+{
+  text-align: center;
 }
 @media (max-width: 600px)
 {
   .presentation-section
   {
     font-size: 20px;
+    width: 100%;
   }
+
+}
+#presentation-wrapper
+{
+  background: url('/public/galaxy.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+@media(max-width: 1500px)
+{
+  #presentation-wrapper
+  {
+    width: 100%;
+  }
+  #menu-radial-wrapper
+  {
+    width: 100%;
+  }
+  .title
+  {
+    text-align: center;
+  }
+}
+.circle-option:hover
+{
+  transform: scale(1.2);
+  box-shadow:10px 0px 20px #393575;
+
 }
 

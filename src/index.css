@@ -19,36 +19,58 @@ code {
 .menu
 {
 
-  background: red;
+  background: rgba(21, 32, 71, 0.75);
   display: flex;
   width: 100vw;
   padding: 10px;
+  color: white;
 
 }
 
-.nav-button
-{
+.nav-button {
   text-align: center;
   width: 25%;
-  list-style: none ;
+  list-style: none;
+  padding: 10px;
+  color: white; /* Texto blanco */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Efecto de transición */
 }
-.title
-{
+
+
+
+.title {
   text-align: center;
   width: 50%;
+  font-size: 24px; /* Tamaño del texto del título */
+  margin: 10px 0; /* Margen superior e inferior del título */
 }
-.nav-options
-{
+
+.nav-options {
   width: 50%;
   display: flex;
-  background: grey;
 
 }
+
+.nav-options a,#language-button {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.52);
+  padding: 10px;
+  border-radius: 5px;
+
+}
+
+.nav-options a:hover,#language-button:hover {
+  background-color: #393575;
+  color: white;
+}
+
 #root
 {
   width: 100%;
-  height: 100vh;
-  background: blue;
+  height: 100%;
 }
 @media (max-width: 600px)
 {
@@ -60,4 +82,11 @@ code {
   {
     width: 100%;
   }
+}
+body{
+  background: url("/public/space.png") no-repeat center center fixed;
+  background-size: 100% 100%;
+  width: 100vw;
+  height: 100vh;
+
 }
