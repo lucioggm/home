@@ -25,6 +25,7 @@ code {
   padding: 10px;
   color: white;
 
+
 }
 
 .nav-button {
@@ -51,6 +52,7 @@ code {
 .nav-options {
   width: 50%;
   display: flex;
+  justify-content: center;
 
 }
 
@@ -70,7 +72,7 @@ code {
 #root
 {
   width: 100%;
-  height: 100%;
+  height: 90%;
 }
 @media (max-width: 600px)
 {
@@ -82,6 +84,7 @@ code {
   {
     width: 100%;
   }
+
 }
 body{
   background: url("/public/space.png") no-repeat center center fixed;
@@ -89,4 +92,33 @@ body{
   width: 100vw;
   height: 100vh;
 
+}
+#contact-title
+{
+  font-size: 30px;
+  color: white;
+}
+footer
+{
+
+    border-top:1px solid white;
+
+
+margin-top: 5px;
+  width: 100%;
+  font-size: 20px;
+  color: #d0c8c8;
+}
+footer a {
+  color: white; /* Cambia el color a tu preferencia */
+}
+
+/* Estilos para los enlaces cuando están siendo visitados */
+footer a:visited {
+  color: whitesmoke; /* Cambia el color a tu preferencia para los enlaces visitados */
+}
+
+/* Estilos para los enlaces cuando están siendo activos (clicados) */
+footer a:active {
+  color: whitesmoke; /* Cambia el color a tu preferencia para los enlaces activos */
 }

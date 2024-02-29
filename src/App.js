@@ -15,7 +15,7 @@ function Presentation(props)
     return <div id={"presentation-wrapper"}>
         <h1 id={"title"} style={{"width": "100%"}}>Luciano Gustavo González Muñoz </h1>
    <div className={"image-presentation-wrapper"}>
-     <img id={"img"} src="photo.png" alt="" style={{"border-radius":"50%"}} height={300}/>
+     <img id={"img"} src="face.jpg" alt="" style={{"border-radius":"50%"}} height={300}/>
    </div>
     <section className={"presentation-section"} id={"about-me"}>
       <p className={"presentation-title"}>{text["descriptionTitle"]}</p>
@@ -24,8 +24,11 @@ function Presentation(props)
 
     <section className={"presentation-section"} id={"education"}>
       <p className={"presentation-title"}>{text["educationTitle"]}</p>
-        <p className={"presentation-text"}>{text["university"]}</p>
-        <p className={"presentation-text"}>{text["campus"]}</p>
+        <p className={"presentation-text"}>{"-" +text["university"]}</p>
+
+        <p className={"presentation-text"}>{"-" +text["campus"]}</p>
+        <p className={"presentation-text"}>{"-"+text["career"]}</p>
+
 
         <p className={"presentation-text"}>{text["certifications"]}</p>
 
@@ -33,17 +36,17 @@ function Presentation(props)
 
     <section className={"presentation-section"} id={"knowledge"}>
       <p className={"presentation-title"}>{text["knowledgeTitle"]}</p>
-        <p className={"presentation-text"}>{text["knowledge"][0]}</p>
-        <p className={"presentation-text"}>{text["knowledge"][1]}</p>
-        <p className={"presentation-text"}>{text["knowledge"][2]}</p>
-        <p className={"presentation-text"}>{text["knowledge"][3]}</p>
-        <p className={"presentation-text"}>{text["knowledge"][4]}</p>
-        <p className={"presentation-text"}>{text["knowledge"][5]}</p>
+        <p className={"presentation-text"}>{ "-"+text["knowledge"][0]}</p>
+        <p className={"presentation-text"}>{"-" +text["knowledge"][1]}</p>
+        <p className={"presentation-text"}>{"-" +text["knowledge"][2]}</p>
+        <p className={"presentation-text"}>{"-" +text["knowledge"][3]}</p>
+        <p className={"presentation-text"}>{"-" +text["knowledge"][4]}</p>
+        <p className={"presentation-text"}>{"-" +text["knowledge"][5]}</p>
 
 
 
         <p className={"presentation-title"}>{text["languagesTitle"]}</p>
-        <p className={"presentation-text"}>{text["languages"]}</p>
+        <p className={"presentation-text"}>{"-" +text["languages"]}</p>
 
 
     </section>
@@ -178,9 +181,21 @@ function App() {
 
     <Presentation text = {language} />
     <MenuRadial textMenu = {language} />
+      <footer>
+          <p id={"contact-title"}>Informacion de Contacto</p>
+          <p>Nombre: Luciano González</p>
+          <p>Correo: lucioggm210@gmail.com</p>
+          <p>GitHub: <a href="https://github.com/lucioggm" target="_blank">lucioggm</a></p>
+          <p>Ver: <a href="https://www.linkedin.com/in/luciano-gustavo-gonzalez-mu%C3%B1oz-046154265?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Be%2BAH525lTmqj80FEE9L8Gw%3D%3D" target="_blank">Linkedin</a></p>
+          <p>Ver: <a href="https://github.com/lucioggm" target="_blank">Curriculum</a></p>
+      </footer>
 
   </div>
       ;
 }
+
+
+
+
 
 export default App;

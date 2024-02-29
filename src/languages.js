@@ -7,7 +7,7 @@ export const es =
         "educationTitle": "Educación",
         "university":"Universidad Nacional Automata de México",
             "campus" :"Facultad de Estudios Superiores Acatlán",
-        "career": "-Licenciatura en Matemáticas Aplicadas y Computación",
+        "career": "Carrera: Matemáticas Aplicadas y Computación",
 
             "certifications": ["Responsive Web Design JavaScript Algorithms and Data Structures from freeCodeCamp"],
 
@@ -40,7 +40,7 @@ export const en = {
         "educationTitle": "Education",
         "university": "National Autonomous University of Mexico",
         "campus": "Acatlán Higher Studies Faculty",
-        "career": "-Bachelor's degree in Applied Mathematics and Computation",
+        "career": "Career: Applied Mathematics and Computation",
 
         "certifications": ["Responsive Web Design JavaScript Algorithms and Data Structures from freeCodeCamp"],
 

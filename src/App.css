@@ -48,6 +48,12 @@
   font-size: 30px;
 
 }
+.presentation-text
+{
+  margin-top: 10px;
+  color: #d0c8c8;
+
+}
 #img
 {
   width: 100%;
@@ -103,7 +109,10 @@
     font-size: 20px;
     width: 100%;
   }
-
+footer
+{
+  border-top:1px solid white;
+}
 }
 #presentation-wrapper
 {
